@@ -7,7 +7,6 @@ import { getAllMenu } from "../../store/thunks/menuThunks";
 const List = () => {
   const dispatch = useDispatch();
   const { menu } = useSelector((store) => store.menuu);
-  console.log("menu: ", menu);
 
   useEffect(() => {
     dispatch(getAllMenu());

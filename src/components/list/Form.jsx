@@ -33,7 +33,6 @@ export const Form = () => {
     ) {
       return alert("заполните поле!!!");
     }
-    console.log(menuValue);
 
     dispatch(postMenu(menuValue));
 

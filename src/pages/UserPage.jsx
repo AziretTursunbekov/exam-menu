@@ -9,9 +9,7 @@ const UserPage = () => {
   const { menu } = useSelector((store) => store.menuu);
 
   const userMenu = menu.filter((item) => item.isChecked === true);
-  console.log(userMenu);
 
-  
   useEffect(() => {
     dispatch(getAllMenu());
   }, []);

@@ -6,7 +6,6 @@ export const signUpRequest = createAsyncThunk(
   async ({ userData, navigate }, { rejectWithValue }) => {
     try {
       const { data } = await axiosInstance.post("/register/", userData);
-      console.log("data: ", data);
       localStorage.setItem("auth", JSON.stringify(data));
       navigate("/");
       return data;
